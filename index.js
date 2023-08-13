@@ -1,7 +1,6 @@
 let tituloh1=document.getElementById("titulo");
 titulo.innerText= "Segunda pre entrega (modificado por DOM)";
 
-
 let botonEnviar = document.getElementById('botonEnviar');
 
 
@@ -23,22 +22,6 @@ function nuevoPresu () {
 
 botonEnviar.addEventListener('click', nuevoPresu)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const Presupuestos=[];
-
 const precioA3 = 230;
 const precioA4 = 180;
 
@@ -55,13 +38,13 @@ function calcularPrecio(pedido) {
     return subtotal;
 }
 
-function agregarPedido(numeroPedido) {
-    const pedido = {};
+/* function agregarPedido(numeroPedido) 
+    const pedido = {}; */
     
     
-            pedido.nombre = prompt(`Pedido ${numeroPedido}: Ingrese el nombre de la persona:`);
-
-        while (true) {
+/*             pedido.nombre = prompt(`Pedido ${numeroPedido}: Ingrese el nombre de la persona:`);
+ */
+        /* while (true) {
             pedido.tipoPapel = prompt(`Pedido ${numeroPedido}: Ingresa el tipo de papel (A4 o A3):`).toUpperCase();
             if (pedido.tipoPapel === "A4" || pedido.tipoPapel === "A3") {
             break;
@@ -74,13 +57,13 @@ function agregarPedido(numeroPedido) {
     Presupuestos.push(pedido);
 }
 
-const cantidadPedidos = parseInt(prompt("Ingrese la cantidad de pedidos de presupuesto que desea realizar:"));
+const cantidadPedidos = parseInt(prompt("Ingrese la cantidad de pedidos de presupuesto que desea realizar:")); */
 
-for (let i = 1; i <= cantidadPedidos; i++) {
+/* for (let i = 1; i <= cantidadPedidos; i++) {
 agregarPedido(i);
-}
+} */
 
-const pedidosA3= Presupuestos.filter(pedido => pedido.tipoPapel=="A3")
+/* const pedidosA3= Presupuestos.filter(pedido => pedido.tipoPapel=="A3")
 console.log("Filtro exclusivo para los pedidos de A3:"); 
 console.log(pedidosA3)
 
@@ -107,6 +90,6 @@ for (const pedido of Presupuestos) {
 const totalConIVA = subtotalTotal * 1.21;
 
 console.log("Subtotal total: $" + Math.round(subtotalTotal));
-console.log("Total con impuestos $" + Math.round(totalConIVA));
+console.log("Total con impuestos $" + Math.round(totalConIVA)); */
 
 
