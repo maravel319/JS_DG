@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Proyecto - Diana Gervasio</title>
+<title>Ejemplo de Diseño en HTML5</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"> </script>
+
+</head>
+
+<body>
+<h1 id="titulo">Primera pre entrega</h1>
+
+<main>
+    <p class="titulito"> Simulador para clientes de imprenta</p>
+    <p>Para poder apreciar mejor mi propuesta se sugiere ingresar al menos DOS pedidos de presupuesto: uno de cada tipo de papel. 
+    </p>
+    
+    <div class="contenedor">
+        <div class="derecha">
+            <h4>IMPRESIONES COLOR </h4>
+            <p>• Full color A4 $180</p>
+            <p>• Full color A3 $280</p>
+            <h4>PROMOCIONES </h4>
+
+            <p>• Pedidos de 10 unidades o más 10% off</p>
+            <p>• Superando las 50 unidades 20% off</p>
+        </div>
+        <div class="izquierda">
+            <h4>Solicitud de presupuesto </h4>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <label for="tamaño">Tamaño:</label>
+            <select id="tamaño" name="tamaño">
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+            </select><br><br>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" step="1"><br><br>
+            
+            <button id="botonEnviar" type="submit">Enviar</button>
+            
+
+        </div>
+
+        
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Tamaño</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <tbody id="tablaCuerpo">
+        </tbody>
+</main>
+<script src="./index.js"></script>
+</script>
+</body>
+</html>
