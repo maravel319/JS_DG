@@ -1,3 +1,7 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
 .contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -8,7 +12,9 @@
     padding: 20px;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    
 }
+
 
 .derecha {
     padding: 20px;
@@ -18,4 +24,33 @@
 
 .titulito{
     color: tomato;
+}
+
+.table{
+    margin-top: 10px;
+    border: black 2px solid;
+    width: 100%;
+    text-align: left;
+}
+
+.total{
+    text-align: left;
+}
+
+
+.dolarLook{
+    border: rgb(4, 70, 4) 2px solid;
+    width: fit-content;
+    text-align: left;
+    padding: 5px;
+}
+
+.aclaracion{
+    margin-top: 70px;
+}
+
+.subtotal{
+    margin-top: 10px;
+font-size: larger;
+background-color: rgb(215, 199, 230);
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Proyecto - Diana Gervasio</title>
-<title>Ejemplo de Diseño en HTML5</title>
+    <title>Ejemplo de Diseño en HTML5</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"> </script>
 
@@ -15,14 +15,14 @@
 <h1 id="titulo">Primera pre entrega</h1>
 
 <main>
-    <p class="titulito"> Simulador para clientes de imprenta</p>
+    <p class="titulito"> Simulador de presupuestos para clientes de imprenta</p>
     </p>
     
     <div class="contenedor">
         <div class="derecha">
             <h4>IMPRESIONES COLOR </h4>
-            <p>• Full color A4 $180</p>
-            <p>• Full color A3 $280</p>
+            <p>• Full color A4 $us12</p>
+            <p>• Full color A3 <span id="a3">$us12</span></p>
             <h4>PROMOCIONES </h4>
 
             <p>• Pedidos de 10 unidades o más 10% off</p>
@@ -44,24 +44,29 @@
             <input type="number" id="cantidad" name="cantidad" min="1" step="1"><br><br>
             
             <button id="botonEnviar" type="submit">Enviar</button>
-            
-
+        </div>
         </div>
 
-        
-    </div>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Tamaño</th>
-                <th>Cantidad</th>
-            </tr>
-        </thead>
-        <tbody id="tablaCuerpo">
-        </tbody>
 </main>
+<h3>PRESUPUESTO</h3>
+<section id="tabla">
+    <table class="table">
+        <thead class="fila1">
+            <th scope="columna">Nombre</th>
+            <th scope="columna">Tamaño</th>
+            <th scope="columna">Cantidad</th>
+            <th scope="columna">Descuento</th>
+            <th scope="columna">Total</th>
+        </thead>
+        <tbody id="tbody" class="presupuesto">
+
+        </tbody>
+    </table>
+
+</section>
+<h4 class="aclaracion">El presupuesto se expresa en dolares y se acepta pago al cambio blue del día</h4>
+<div class="dolarLook" id="dolar"></div>
+
 <script src= "./index.js"></script>
 </script>
 </body>
